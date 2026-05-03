@@ -8,13 +8,11 @@ class Solution
       {
          n= n*(-1);
       }
-      while(n!=0){
-      r=n%10;  
-      s=s*10+r;
+      while(n!=0){  
+      s=s*10+(n%10);
       n=n/10;}
       if(s == x)
       {
-        System.out.println(s);
         return true;
       }
       else
