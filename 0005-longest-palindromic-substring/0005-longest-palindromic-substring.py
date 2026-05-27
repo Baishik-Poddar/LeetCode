@@ -1,20 +1,24 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        res=[]
-        if(len(s)<=1):
-            return s
-        longest = s[0]
-        for i in range(len(s)):
-            p1 = self.expand(s, i, i)
-            if len(p1) > len(longest):
-                longest = p1
-            p2 = self.expand(s, i, i + 1)
-            if len(p2) > len(longest):
-                longest = p2
-        return longest
+        n = len(s)
+        longest_palindrome_start, longest_palindrome_len = 0, 1
 
-    def expand(self, s: str, left: int, right: int) -> str:
-        while left >= 0 and right < len(s) and s[left] == s[right]:
-            left -= 1
-            right += 1
-        return s[left + 1:right]
+        for i in range(0, n):
+            right = i
+            while right < n and s[i] == s[right]:
+                right += 1
+            # s[i, right - 1] inclusive are equal characters e.g. "aaa"
+            
+            # while s[left] == s[right], s[left, right] inclusive is palindrome e.g. "baaab"
+            left = i - 1
+            while left >= 0 and right < n and s[left] == s[right]:
+                left -= 1
+                right += 1
+            
+            # s[left + 1, right - 1] inclusive is palindromic
+            palindrome_len = right - left - 1
+            if palindrome_len > longest_palindrome_len:
+                longest_palindrome_len = palindrome_len
+                longest_palindrome_start = left + 1
+            
+        return s[longest_palindrome_start: longest_palindrome_start + longest_palindrome_len]
