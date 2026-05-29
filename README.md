@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/Baishik-Poddar/LeetCode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Baishik-Poddar/LeetCode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0014-longest-common-prefix](https://github.com/Baishik-Poddar/LeetCode/tree/master/0014-longest-common-prefix) |
+| [1946-largest-number-after-mutating-substring](https://github.com/Baishik-Poddar/LeetCode/tree/master/1946-largest-number-after-mutating-substring) |
 ## Hash Table
 |  |
 | ------- |
@@ -34,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/Baishik-Poddar/LeetCode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/Baishik-Poddar/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/Baishik-Poddar/LeetCode/tree/master/0020-valid-parentheses) |
+| [1946-largest-number-after-mutating-substring](https://github.com/Baishik-Poddar/LeetCode/tree/master/1946-largest-number-after-mutating-substring) |
 ## Sliding Window
 |  |
 | ------- |
@@ -54,4 +56,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Baishik-Poddar/LeetCode/tree/master/0020-valid-parentheses) |
+## Greedy
+|  |
+| ------- |
+| [1946-largest-number-after-mutating-substring](https://github.com/Baishik-Poddar/LeetCode/tree/master/1946-largest-number-after-mutating-substring) |
 <!---LeetCode Topics End-->
